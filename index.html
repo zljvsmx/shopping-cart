@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <link rel="stylesheet" href="css/index.css">
+      <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+      <div id="banner"></div>
+      <div id="container">
+      	<ul>
+      		<li num="1"><img src="images/1.jpg"/><span class="things_name">2014年春季爆品A</span><p>$<i>10</i><span class="buy">点击购买</span></p></li>
+      		<li num="2"><img src="images/2.jpg"/><span class="things_name">2014年春季爆品B</span><p>$<i>20</i><span class="buy">点击购买</span></p></li>
+      		<li num="3"><img src="images/3.jpg"/><span class="things_name">2014年春季爆品C</span><p>$<i>30</i><span class="buy">点击购买</span></p></li>
+      		<li num="4"><img src="images/4.jpg"/><span class="things_name">2014年春季爆品D</span><p>$<i>40</i><span class="buy">点击购买</span></p></li>
+      	</ul>
+      </div>
+      
+      <div id="carlist">
+      	<div class="car">
+      		<div>
+      			<span class="carLogo"><span></span><img src="images/car.png"/></span>
+      			<span class="txt">购<br />物<br />车</span>
+      		</div>
+      		
+      	</div>
+      	<div class="list">
+      		<!--此处添加动态元素-->
+      		<div class="total">
+      			<span>总价：</span><span>0</span>元
+      		</div>
+      	</div>
+      </div>
+      <script type="text/javascript">
+      	function view(){
+					return{
+						w:document.documentElement.clientWidth,
+						h:document.documentElement.clientHeight
+					};
+				}
+				document.body.style.height=view().h+"px";
+      </script>
+</body>
+</html>
